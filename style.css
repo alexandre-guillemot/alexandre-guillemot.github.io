@@ -1,0 +1,84 @@
+ /* The sidebar menu */
+
+ .sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 320px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #404040; /* Black */
+ }
+
+ .sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 280px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #404040; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin-left: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    text-decoration: none;
+    color: #BBBBBB;
+  }
+  
+  .sidenav h1 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    display: block;
+  }
+
+  .sidenav h2 {
+    text-decoration: none;
+    font-size: 20px;
+    color: #EEEEEE;
+    display: block;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #FFFFFF;
+  }
+  
+  /* Style page content */
+  .body{
+    background-color: #000000; /* Black */
+  }
+
+  .body h1{
+    color : white;
+  }
+
+  .body p{
+    color : white;
+  }
+  
+  .main {
+    margin-left: 320px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  .vl {
+    border-left: 2px solid orange;
+    height: 100%;
+    position: absolute;
+    left: 320px;
+    top: 0;
+  }
+
+
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } 
