@@ -52,10 +52,14 @@
   
   /* Style page content */
   .body{
-    background-color: #000000; /* Black */
+    background-color: gray; /* Black */
   }
 
   .body h1{
+    color : white;
+  }
+
+  .body h2{
     color : white;
   }
 
