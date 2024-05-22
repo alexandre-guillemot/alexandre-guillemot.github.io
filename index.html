@@ -15,7 +15,7 @@
     <div class="sidenav">
         <h1 style="text-align:center"> Alexandre Guillemot</h1>
 
-        <img src = "pp.jpeg" witdh = "330" height="400" class="center"/>
+        <img src="pp.jpeg" witdh="330" height="400" class="center" />
         <h2> Contact </h2>
         <p>
             Email : <a href="mailto:alexandre.guillemot@inria.fr">alexandre.guillemot@inria.fr</a>
@@ -40,6 +40,8 @@
         <br />
         <a href="#research">Research</a>
         <br />
+        <a href="#software">Software</a>
+        <br />
         <a href="#talks">Talks</a>
         <br />
         <a href="#teaching">Teaching</a>
@@ -51,7 +53,9 @@
         <section id="about">
             <h1> About me</h1>
             <p>
-                I am a PhD student in the team <a href="https://mathexp.eu/">Mathexp</a>. My thesis is supervised by <a href="https://mathexp.eu/lairez/">Pierre lairez</a>. I mainly focus on computer algebra, effective algebraic geometry and topology.  
+                I am a PhD student in the team <a href="https://mathexp.eu/">Mathexp</a>. My thesis is supervised by <a
+                    href="https://mathexp.eu/lairez/">Pierre Lairez</a>. I mainly focus on computer algebra, effective
+                algebraic geometry and topology.
             </p>
         </section>
         <section id="research">
@@ -59,9 +63,40 @@
             <h2> Preprints </h2>
             <ol>
                 <li>
-                    <authors><a href="."> Alexandre Guillemot</a> and <a href="https://mathexp.eu/lairez/">Pierre Lairez</a></authors>. <i>Validated numerics for algebraic path tracking</i>. arXiv:<a href="https://arxiv.org/abs/2401.17973">2401.17973</a> [cs, math]. Jan. 2024.
-                    <br/>
-                    <abstract>Using validated numerical methods, interval arithmetic and Taylor models, we propose a certified predictor-corrector loop for tracking zeros of polynomial systems with a parameter. We provide a Rust implementation which shows tremendous improvement over existing software for certified path tracking.</abstract>
+                    <authors><a href="./index.html"> Alexandre Guillemot</a> and <a
+                            href="https://mathexp.eu/lairez/">Pierre Lairez</a></authors>. <i>Validated numerics for
+                        algebraic path tracking</i>. arXiv:<a href="https://arxiv.org/abs/2401.17973">2401.17973</a>
+                    [cs, math]. Jan. 2024.
+                    <br />
+                    <abstract>Using validated numerical methods, interval arithmetic and Taylor models, we propose a
+                        certified predictor-corrector loop for tracking zeros of polynomial systems with a parameter. We
+                        provide a Rust implementation which shows tremendous improvement over existing software for
+                        certified path tracking.</abstract>
+                </li>
+            </ol>
+        </section>
+        <section id="software">
+            <h1> Software </h1>
+            <ol>
+                <li>
+                    <a href=https://gitlab.inria.fr/numag/algpath>algpath</a>. Implementation by <a
+                        href="https://mathexp.eu/lairez/">Pierre Lairez</a>.
+                    <br />
+                    <abstract>
+                        algpath is a proof-of-concept Rust package for the rigorous computation of the continuation of a
+                        regular zero of a polynomial when changing a parameter.
+                    </abstract>
+                </li>
+                <li>
+                    <a href=https://gitlab.inria.fr/numag/algpath-bench>algpath bench</a>. Implementation by <a
+                        href="./index.html">Alexandre Guillemot</a> and <a href="https://mathexp.eu/lairez/">Pierre
+                        Lairez</a>.
+                    <br />
+                    <abstract>
+                        algpath bench is a repository for homotopy continuation benchmarking. It is able to test
+                        different packages on polynomial systems, and to process the results in the form of tables and
+                        latex output.
+                    </abstract>
                 </li>
             </ol>
         </section>
@@ -69,7 +104,14 @@
             <h1> Talks </h1>
             <ol>
                 <li>
-                    <a href=https://conferences.cirm-math.fr/3047.html>Journées Nationales de Calcul Formel</a>, <a href = https://www.cirm-math.fr/index.html>CIRM</a>, March 2024. [<a href = "./slides_jncf_2024.pdf">slides</a>]
+                    <a href=https://conferences.cirm-math.fr/3047.html>Journées Nationales de Calcul Formel (JNCF)</a>,
+                    <a href=https://www.cirm-math.fr/index.html>CIRM</a>, March 2024. [<a
+                        href="./slides_jncf_2024.pdf">slides</a>]
+                </li>
+                <li>
+                    <a href=https://nuscap.gitlabpages.inria.fr/Paris2024.html>Numerical Safety for Computer-Aided
+                        Proofs (NUSCAP)</a>, <a href=https://www.lip6.fr>LIP6</a>, May 2024. [<a
+                        href="./slides_nuscap_2024.pdf">slides</a>]
                 </li>
             </ol>
         </section>
@@ -77,7 +119,8 @@
             <h1> Teaching </h1>
             <ol>
                 <li>
-                    MAA101 - Linear Algebra (teaching assistant), <a href = "https://www.polytechnique.edu">École polytechnique</a>, fall 2023.
+                    MAA101 - Linear Algebra (teaching assistant), <a href="https://www.polytechnique.edu">École
+                        polytechnique</a>, fall 2023.
                 </li>
             </ol>
         </section>
