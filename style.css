@@ -4,29 +4,6 @@
   font-size: 18px;
 }
 
-.sidebar {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 370px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #404040;
-}
-
-.sidenav {
-  height: 95%; /* Full-height: remove this if you want "auto" height */
-  width: 330px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #404040; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-  margin-left: 20px;
-}
-
 a {
   text-decoration: none;
   color: orange;
@@ -36,20 +13,13 @@ a:hover {
   color: white;
 }
 
-.body{
-  background-color: black; /* Black */
+.body {
+  background-color: black;
+  /* Black */
 }
 
 h1 {
   padding: 6px 8px 6px 24px;
-  text-decoration: none;
-  font-size: 24px;
-  color: white;
-  display: block;
-}
-
-.main h1{
-  padding: 20px 0px 0px 0px;
   text-decoration: none;
   font-size: 24px;
   color: white;
@@ -63,42 +33,21 @@ h2 {
   display: block;
 }
 
-p{
-  font-size : 18px;
-  color : white;
+p {
+  font-size: 18px;
+  color: white;
 }
 
-ol{
-  font-size : 18px;
-  color : white;
+ol {
+  font-size: 18px;
+  color: white;
 }
 
-abstract{
-  font-size : 14px;
-  color : white;
+abstract {
+  font-size: 14px;
+  color: white;
 }
 
-.main {
-  margin-left: 370px; /* Same as the width of the sidebar */
-  padding-left: 20px;
+img {
+  float: right;
 }
-
-.vl {
-  border-left: 2px solid orange;
-  height: 100%;
-  position: absolute;
-  left: 370px;
-  top: 0;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-/* @media screen and (max-height: 450px) {
-.sidenav {padding-top: 15px;}
-.sidenav a {font-size: 18px;}
-}  */
