@@ -6,23 +6,27 @@
 
 a {
   text-decoration: none;
-  color: orange;
+  color: #BD93F9;
+}
+
+comment {
+  color: #8BE9FD;
 }
 
 a:hover {
-  color: white;
+  color: #fc8403;
 }
 
 .body {
-  background-color: black;
-  /* Black */
+  background-color: #151515;
+  /* #111111 */
 }
 
 h1 {
   padding: 6px 8px 6px 24px;
   text-decoration: none;
   font-size: 24px;
-  color: white;
+  color: #F8F8F2;
   display: block;
 }
 
@@ -35,17 +39,17 @@ h2 {
 
 p {
   font-size: 18px;
-  color: white;
+  color: #F8F8F2;
 }
 
 ol {
   font-size: 18px;
-  color: white;
+  color: #F8F8F2;
 }
 
 abstract {
   font-size: 14px;
-  color: white;
+  color: #F8F8F2;
 }
 
 img {
