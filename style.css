@@ -1,4 +1,25 @@
-/* The sidebar menu */
+:root {
+  --background: #282a36;
+  --foreground: #f8f8f2;
+  --color0: #21222c;
+  --color1: #ff5555;
+  --color2: #50fa7b;
+  --color3: #f1fa8c;
+  --color4: #bd93f9;
+  --color5: #ff79c6;
+  --color6: #8be9fd;
+  --color7: #f8f8f2;
+  --color8: #6272a4;
+  --color9: #ff6e6e;
+  --color10: #69ff94;
+  --color11: #ffffa5;
+  --color12: #d6acff;
+  --color13: #ff92df;
+  --color14: #a4ffff;
+  --color15: #ffffff;
+  --transparent: rgba(0, 0, 0, 0);
+}
+
 * {
   font-family: sans-serif;
   font-size: 18px;
@@ -6,55 +27,54 @@
 
 a {
   text-decoration: none;
-  color: #BD93F9;
+  color: var(--color4);
 }
 
 comment {
-  color: #8BE9FD;
+  color: var(--color2);
 }
 
 a:hover {
-  color: #fc8403;
+  color: var(--color6);
 }
 
 .body {
-  background-color: #151515;
-  /* #111111 */
+  background-color: var(--background);
 }
 
 h1 {
   padding: 6px 8px 6px 24px;
   text-decoration: none;
   font-size: 24px;
-  color: #F8F8F2;
+  color: var(--foreground);
   display: block;
 }
 
 h2 {
   text-decoration: none;
   font-size: 20px;
-  color: #CCCCCC;
+  color: var(--foreground);
   display: block;
 }
 
 p {
   font-size: 18px;
-  color: #F8F8F2;
+  color: var(--foreground);
 }
 
 ul {
   font-size: 18px;
-  color: #F8F8F2;
+  color: var(--foreground);
 }
 
 ol {
   font-size: 18px;
-  color: #F8F8F2;
+  color: var(--foreground);
 }
 
 abstract {
   font-size: 14px;
-  color: #F8F8F2;
+  color: var(--foreground);
 }
 
 img {
