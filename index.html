@@ -38,15 +38,35 @@
             algebraic geometry and topology.
         </p>
     </section>
-    <section id="research">
-        <h1> Research </h1>
+    <section id="publications">
+        <h1> Publications </h1>
         <ul>
+            <!-- <li>
+                <i>TITRE</i>
+                [<a href="LIEN">doi</a>]
+                [<a href="LIEN">arxiv</a>]
+                [<a href="LIEN">hal</a>]
+                <comment>EVENTUEL COMMENTAIRE</comment>
+                <br />
+                <authors><a href="AUTHOR WEPAGE LINK">AUTHOR.</a> ADDITIONAL AUTHORS</authors>
+                <br />
+                <bib>ADDITIONAL BIB INFO</bib>
+                <br />
+                <abstract>
+                    ABSTRACT
+                </abstract>
+                <br />
+                <br />
+            </li> -->
             <li>
-                <authors><a href="./index.html"> Alexandre Guillemot</a></authors>. <i>Certified Algebraic Path Tracking
-                    with Algpath.</i>
-                2025. To appear. [<a href="https://inria.hal.science/hal-05308166">hal</a>][<a
-                    href="https://inria.hal.science/hal-05308166v1/document">pdf</a>] <comment>Issac '25 distinguished
-                    software presentation!</comment>
+                <i>Certified Algebraic Path Tracking with Algpath.</i>
+                [<a href="https://doi.org/10.1145/3787957.3787960">doi</a>]
+                [<a href="https://inria.hal.science/hal-05308166">hal</a>]
+                <comment>Issac '25 distinguished software presentation!</comment>
+                <br />
+                <authors><a href="./index.html">Alexandre Guillemot.</a></authors>
+                <br />
+                <bib>ACM Commun. Comput. Algebra 59.3 (Jan. 2026), pp. 53–56.</bib>
                 <br />
                 <abstract>
                     Algpath is a certified homotopy continuation software. We upgrade the previous fixed-precision Rust
@@ -54,17 +74,20 @@
                     tackle problems on which the initial implementation fails due to the inability to increase
                     precision, and where uncertified methods may fail or path jump.
                 </abstract>
+                <br />
+                <br />
             </li>
             <li>
+                <i>Validated numerics for algebraic path tracking.</i>
+                [<a href="https://doi.org/10.1145/3666000.3669673">doi</a>]
+                [<a href="https://inria.hal.science/hal-04697800v1">hal</a>]
+                [<a href="https://arxiv.org/abs/2401.17973">arxiv</a>]
+                <br />
                 <authors><a href="./index.html"> Alexandre Guillemot</a> and <a href="https://mathexp.eu/lairez/">Pierre
-                        Lairez</a></authors>. <i>Validated numerics for
-                    algebraic path tracking</i>. Proceedings of the <a href="https://www.issac-conference.org/2024">2024
-                    International Symposium on Symbolic and
-                    Algebraic Computation</a>, 36–45. July 2024. [<a
-                    href="https://inria.hal.science/hal-04697800v1">hal</a>][<a
-                    href="https://doi.org/10.1145/3666000.3669673">doi</a>][<a
-                    href="https://arxiv.org/abs/2401.17973">arxiv</a>][<a
-                    href="https://arxiv.org/pdf/2401.17973">pdf</a>]
+                        Lairez.</a></authors>
+                <br />
+                <bib>Proc. ISSAC 2024. New York, NY, USA: Association for Computing Machinery, July 2024, pp. 36–45.
+                </bib>
                 <br />
                 <abstract>
                     Using validated numerical methods, interval arithmetic and Taylor models, we propose a certified
@@ -72,6 +95,31 @@
                     Rust implementation which shows tremendous improvement over existing software for certified path
                     tracking.
                 </abstract>
+                <br />
+                <br />
+            </li>
+        </ul>
+        <h2> Preprints </h2>
+        <ul>
+            <li>
+                <i>Computing Braids from Approximate Data.</i>
+                [<a href="https://arxiv.org/abs/2601.23073">arxiv</a>]
+                <br />
+                <authors><a href="./index.html"> Alexandre Guillemot</a> and <a href="https://mathexp.eu/lairez/">Pierre
+                        Lairez.</a></authors>
+                <br />
+                <bib>Jan. 2026.</bib>
+                <br />
+                <abstract>
+                    We study the theoretical and practical aspects of computing braids described by approximate
+                    descriptions of paths in the plane. Exact algorithms rely on the lexicographic ordering of the
+                    points in the plane, which is unstable under numerical uncertainty. Instead, we formalize an input
+                    model for approximate data, based on a separation predicate. It applies, for example, to paths
+                    obtained by tracking the roots of a parametrized polynomial with complex coefficients, thereby
+                    connecting certified path tracking outputs to exact braid computation.
+                </abstract>
+                <br />
+                <br />
             </li>
         </ul>
     </section>
@@ -79,7 +127,8 @@
         <h1> Software </h1>
         <ul>
             <li>
-                <a href=https://gitlab.inria.fr/numag/algpath>algpath</a>, joint implementation with <a href="https://mathexp.eu/lairez/">Pierre
+                <a href=https://gitlab.inria.fr/numag/algpath>algpath</a>, joint implementation with <a
+                    href="https://mathexp.eu/lairez/">Pierre
                     Lairez</a>
                 <br />
                 <abstract>
@@ -100,7 +149,8 @@
                 <a href=https://gitlab.inria.fr/aguillem/braids>braids</a>
                 <br />
                 <abstract>
-                    braids is a Rust package for the computation of braids induced by the displacement of the roots of a parametrized polynomial with complex coefficients.
+                    braids is a Rust package for the computation of braids induced by the displacement of the roots of a
+                    parametrized polynomial with complex coefficients.
                     It relies on algpath for the certified path tracking step.
                 </abstract>
             </li>
@@ -133,7 +183,7 @@
             <li>
                 <a href=https://aca2025.github.io>Applications of Computer Algebra (ACA)</a>,
                 <a href=https://www.cccc.gr/gr>Cultural Conference Center of Heraklion</a>, July 2025. [<a
-                    href="./25-talks-aca.pdf">slides</a>]
+                    href="./2025/talks/aca.pdf">slides</a>]
             </li>
             <li>
                 <a href=https://www.siam.org/conferences-events/siam-conferences/ag25>SIAM Conference on Applied
