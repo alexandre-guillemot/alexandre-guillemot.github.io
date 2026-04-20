@@ -30,6 +30,11 @@ a {
   color: var(--color4);
 }
 
+a2 {
+  text-decoration: none;
+  color: var(--color4);
+}
+
 comment {
   color: var(--color2);
 }

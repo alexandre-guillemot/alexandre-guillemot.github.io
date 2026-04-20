@@ -39,12 +39,12 @@
         </p>
     </section>
     <section id="publications">
-        <h1> Publications </h1>
+        <h1> Preprints and publications </h1>
         <ul>
             <!-- <li>
                 <i>TITRE</i>
                 [<a href="LIEN">doi</a>]
-                [<a href="LIEN">arxiv</a>]
+                [<a href="LIEN">arXiv</a>]
                 [<a href="LIEN">hal</a>]
                 <comment>EVENTUEL COMMENTAIRE</comment>
                 <br />
@@ -52,12 +52,56 @@
                 <br />
                 <bib>ADDITIONAL BIB INFO</bib>
                 <br />
-                <abstract>
+                                <details>
+                    <summary>abstract</summary>
+                    <i>
                     ABSTRACT
-                </abstract>
-                <br />
-                <br />
+                                <i></details>
+                                <br />
             </li> -->
+            <li>
+                <i>Belyi map verification using certified path tracking.</i>
+                [<a href="https://arxiv.org/abs/2604.15562">arXiv</a>]
+                <br />
+                <authors><a2> Alexandre Guillemot</a2> and <a href="https://jvoight.github.io/">John
+                        Voight.</a></authors>
+                <br />
+                <bib>Preprint. April 2026.</bib>
+                <details>
+                    <summary>abstract</summary>
+                    <i>
+                        We provide an end-to-end workflow to rigorously compute the monodromy of Belyi maps from exact
+                        equations over number fields using certified homotopy continuation. We then apply this method at
+                        scale to certify the monodromy triples of Belyi maps in the $L$-functions and Modular Forms
+                        Database
+                        (LMFDB).
+                    </i>
+                </details>
+                <br />
+            </li>
+            <li>
+                <i>Computing Braids from Approximate Data.</i>
+                [<a href="https://arxiv.org/abs/2601.23073">arXiv</a>]
+                <br />
+                <authors><a2> Alexandre Guillemot</a2> and <a href="https://mathexp.eu/lairez/">Pierre
+                        Lairez.</a></authors>
+                <br />
+                <bib>Preprint. January 2026.</bib>
+                <br />
+                <details>
+                    <summary>abstract</summary>
+                    <i>
+                        We study the theoretical and practical aspects of computing braids described by approximate
+                        descriptions of paths in the plane. Exact algorithms rely on the lexicographic ordering of the
+                        points in the plane, which is unstable under numerical uncertainty. Instead, we formalize an
+                        input
+                        model for approximate data, based on a separation predicate. It applies, for example, to paths
+                        obtained by tracking the roots of a parametrized polynomial with complex coefficients, thereby
+                        connecting certified path tracking outputs to exact braid computation.
+                    </i>
+                </details>
+                <br />
+            </li>
             <li>
                 <i>Certified Algebraic Path Tracking with Algpath.</i>
                 [<a href="https://doi.org/10.1145/3787957.3787960">doi</a>]
@@ -68,57 +112,40 @@
                 <br />
                 <bib>ACM Commun. Comput. Algebra 59.3 (Jan. 2026), pp. 53–56.</bib>
                 <br />
-                <abstract>
-                    Algpath is a certified homotopy continuation software. We upgrade the previous fixed-precision Rust
-                    implementation by incorporating mixed, adaptive precision with minimal overhead. This allows us to
-                    tackle problems on which the initial implementation fails due to the inability to increase
-                    precision, and where uncertified methods may fail or path jump.
-                </abstract>
-                <br />
+                <details>
+                    <summary>abstract</summary>
+                    <i>
+                        Algpath is a certified homotopy continuation software. We upgrade the previous fixed-precision
+                        Rust
+                        implementation by incorporating mixed, adaptive precision with minimal overhead. This allows us
+                        to
+                        tackle problems on which the initial implementation fails due to the inability to increase
+                        precision, and where uncertified methods may fail or path jump.
+                    </i>
+                </details>
                 <br />
             </li>
             <li>
                 <i>Validated numerics for algebraic path tracking.</i>
                 [<a href="https://doi.org/10.1145/3666000.3669673">doi</a>]
                 [<a href="https://inria.hal.science/hal-04697800v1">hal</a>]
-                [<a href="https://arxiv.org/abs/2401.17973">arxiv</a>]
+                [<a href="https://arxiv.org/abs/2401.17973">arXiv</a>]
                 <br />
-                <authors><a href="./index.html"> Alexandre Guillemot</a> and <a href="https://mathexp.eu/lairez/">Pierre
+                <authors><a2> Alexandre Guillemot</a2> and <a href="https://mathexp.eu/lairez/">Pierre
                         Lairez.</a></authors>
                 <br />
                 <bib>Proc. ISSAC 2024. New York, NY, USA: Association for Computing Machinery, July 2024, pp. 36–45.
                 </bib>
                 <br />
-                <abstract>
-                    Using validated numerical methods, interval arithmetic and Taylor models, we propose a certified
-                    predictor-corrector loop for tracking zeros of polynomial systems with a parameter. We provide a
-                    Rust implementation which shows tremendous improvement over existing software for certified path
-                    tracking.
-                </abstract>
-                <br />
-                <br />
-            </li>
-        </ul>
-        <h2> Preprints </h2>
-        <ul>
-            <li>
-                <i>Computing Braids from Approximate Data.</i>
-                [<a href="https://arxiv.org/abs/2601.23073">arxiv</a>]
-                <br />
-                <authors><a href="./index.html"> Alexandre Guillemot</a> and <a href="https://mathexp.eu/lairez/">Pierre
-                        Lairez.</a></authors>
-                <br />
-                <bib>Jan. 2026.</bib>
-                <br />
-                <abstract>
-                    We study the theoretical and practical aspects of computing braids described by approximate
-                    descriptions of paths in the plane. Exact algorithms rely on the lexicographic ordering of the
-                    points in the plane, which is unstable under numerical uncertainty. Instead, we formalize an input
-                    model for approximate data, based on a separation predicate. It applies, for example, to paths
-                    obtained by tracking the roots of a parametrized polynomial with complex coefficients, thereby
-                    connecting certified path tracking outputs to exact braid computation.
-                </abstract>
-                <br />
+                <details>
+                    <summary>abstract</summary>
+                    <i>
+                        Using validated numerical methods, interval arithmetic and Taylor models, we propose a certified
+                        predictor-corrector loop for tracking zeros of polynomial systems with a parameter. We provide a
+                        Rust implementation which shows tremendous improvement over existing software for certified path
+                        tracking.
+                    </i>
+                </details>
                 <br />
             </li>
         </ul>
@@ -131,34 +158,66 @@
                     href="https://mathexp.eu/lairez/">Pierre
                     Lairez</a>
                 <br />
-                <abstract>
-                    algpath is a Rust package for the rigorous computation of the
-                    continuation of a regular zero of a parametrized polynomial system as the parameter varies.
-                </abstract>
+                <details>
+                    <summary>about</summary>
+                    <i>
+                        algpath is a Rust package for the rigorous computation of the
+                        continuation of a regular zero of a parametrized polynomial system as the parameter varies.
+                    </i>
+                </details>
+                <br />
             </li>
             <li>
                 <a href=https://gitlab.inria.fr/numag/algpath-bench>algpath bench</a>
                 <br />
-                <abstract>
-                    algpath bench is a repository for homotopy continuation benchmarking. It is able to test
-                    different packages on polynomial systems, and to process the results in the form of tables and
-                    latex output.
-                </abstract>
+                <details>
+                    <summary>about</summary>
+                    <i>
+                        algpath bench is a repository for homotopy continuation benchmarking. It is able to test
+                        different packages on polynomial systems, and to process the results in the form of tables and
+                        latex output.
+                    </i>
+                </details>
+                <br />
             </li>
             <li>
                 <a href=https://gitlab.inria.fr/aguillem/braids>braids</a>
                 <br />
-                <abstract>
-                    braids is a Rust package for the computation of braids induced by the displacement of the roots of a
-                    parametrized polynomial with complex coefficients.
-                    It relies on algpath for the certified path tracking step.
-                </abstract>
+                <details>
+                    <summary>about</summary>
+                    <i>
+                        braids is a Rust package for the computation of braids induced by the displacement of the roots
+                        of a
+                        parametrized polynomial with complex coefficients.
+                        It relies on algpath for the certified path tracking step.
+                    </i>
+                </details>
+                <br />
+            </li>
+            <li>
+                <a href=https://gitlab.inria.fr/aguillem/belyi-monodromy>Belyi monodromy</a>
+                <br />
+                <details>
+                    <summary>about</summary>
+                    <i>
+                        Belyi Monodromy is a repository for the rigorous computation of the monodromy triples of Belyi
+                        maps listed in the LMFDB, using the certified path tracking software Algpath.
+                        As a byproduct, it provides utilities for computing the monodromy of Belyi maps in general.
+                    </i>
+                </details>
+                <br />
             </li>
         </ul>
     </section>
     <section id="talks">
         <h1> Talks </h1>
         <ul>
+            <li>
+                <a href=https://sourcesup.renater.fr/www/orga-jncf/index-2026.html>Journées Nationales de Calcul
+                    Formel (JNCF)</a>,
+                <a href=https://www.cirm-math.fr/index.html>CIRM</a>, March 2026. [<a
+                    href="./2026/talks/jncf.pdf">slides</a>]
+            </li>
             <li>
                 <a href=https://team.inria.fr/ouragan/meetings>Ouragan seminar</a>,
                 <a href=https://www.imj-prg.fr> imj-prg</a>, December 2025. [<a
