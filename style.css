@@ -84,3 +84,10 @@ abstract {
 img {
   float: right;
 }
+
+.publication-separator {
+  border-top: 1px solid;
+  margin: 0.5cm 0;
+  list-style: none;
+  width: 50%;
+}
